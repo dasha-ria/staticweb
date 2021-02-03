@@ -1,3 +1,9 @@
+* {
+    font-family: Arial,Helvetica,sans-serif;
+    font-style: normal; 
+    font-variant: normal; 
+}
+
 body {
     margin: auto;
 }
@@ -18,9 +24,6 @@ header {
 .menu {
     text-decoration: none;
     color: #c9a434;
-    font-family: Arial,Helvetica,sans-serif;
-    font-style: normal; 
-    font-variant: normal; 
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -28,3 +31,39 @@ header {
 a:hover {
     color: #ebc862;
 }
+
+main {
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.productpic {
+    width: 40%;
+    height: auto;
+}
+
+.productdisplayname {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.productdescription {
+    margin: 0.5rem 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.buynowbutton {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2rem;
+
+    background-color: white;
+    border: 3px solid black;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
