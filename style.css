@@ -28,7 +28,7 @@ header {
     font-size: 1.5rem;
 }
 
-a:hover {
+.menu:hover {
     color: #ebc862;
 }
 
@@ -132,11 +132,22 @@ footer {
     
 }
 
-.footer1, .footer2 {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+li {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
+.seasonlink {
+    text-decoration: none;
+    color: black;
+}
+
+.seasonlink:hover {
+    color: rgb(185, 185, 185);
+}
 
 @media only screen and (max-width: 600px) { 
     del {
@@ -167,7 +178,7 @@ footer {
 
     main {
         padding: 0.5rem 4rem;
-    }
+    } 
 
     .soldtext {
         font-size: 1rem;
