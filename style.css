@@ -53,6 +53,7 @@ main {
     margin: 0.5rem 0.5rem;
     font-weight: 400;
     font-size: 1rem;
+    margin: 0;
 }
 
 .buynowbutton {
@@ -66,4 +67,61 @@ main {
     height: 3rem;
     margin-top: 2rem;
 }
+
+.storepic {
+    width: 100%;
+    height: auto;
+}
+
+.solddiv {
+    position: relative;
+}
+
+.soldpic {
+    width: 100%;
+    height: auto;
+    opacity: 40%;
+}
+
+.soldbutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soldtext {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.storetitle {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.storeprice {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.discountprice {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+del {
+    color: red;
+}
+
+
 
