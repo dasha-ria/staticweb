@@ -80,7 +80,7 @@ main {
     opacity: 40%;
 }
 
-.soldbutton {
+.soldbox {
     position: absolute;
     top: 0;
     left: 0;
@@ -149,6 +149,10 @@ del {
 
     main {
         padding: 0.5rem 4rem;
+    }
+
+    .soldtext {
+        font-size: 1rem;
     }
 }
 
