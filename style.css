@@ -123,10 +123,18 @@ del {
 footer {
     background-color: #cecad6;
     height: 8rem;
-    color: white;
+    color: black;
     font-size: 1rem;
     font-weight: 400;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     
+}
+
+.footer1, .footer2 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 
