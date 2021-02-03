@@ -34,13 +34,11 @@ a:hover {
 
 main {
     padding: 4rem 4rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
+
 .productpic {
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 
@@ -50,7 +48,6 @@ main {
 }
 
 .productdescription {
-    margin: 0.5rem 0.5rem;
     font-weight: 400;
     font-size: 1rem;
     margin: 0;
@@ -136,6 +133,32 @@ del {
         width: 4rem;
         height: 4rem;
     }
+
+
+    .productpic {
+        width: 100%;
+    }
+
+    .productwrap {
+
+    }
+
+    .storediv {
+        margin-bottom: 2rem;
+    }
+
+    main {
+        padding: 0.5rem 4rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .productwrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
 }
 
