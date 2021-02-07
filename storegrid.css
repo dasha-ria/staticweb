@@ -1,16 +1,12 @@
-
-
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 18%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 18%;
 }
 
 @media only screen and (max-width: 600px) {
-    
-    .grid {
+  .grid {
     display: flex;
     flex-flow: column;
-}
-
+  }
 }

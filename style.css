@@ -1,222 +1,207 @@
 * {
-    font-family: Arial,Helvetica,sans-serif;
-    font-style: normal; 
-    font-variant: normal; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant: normal;
 }
 
 body {
-    margin: auto;
+  margin: auto;
 }
 
 header {
-    background-color: #E7EAC2;
-    display: flex;
-    justify-content: space-around;
-    height: 8rem;
-    align-items: center;
+  background-color: #e7eac2;
+  display: flex;
+  justify-content: space-around;
+  height: 8rem;
+  align-items: center;
 }
 
 .logo {
-    width: 6rem;
-    height: 6rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .menu {
-    text-decoration: none;
-    color: #c9a434;
-    font-weight: 700;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: #c9a434;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .menu:hover {
-    color: #ebc862;
+  color: #ebc862;
 }
 
 main {
-    padding: 4rem 4rem;
+  padding: 4rem 4rem;
 }
 
-
 .productpic {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
 
 .productdisplayname {
-    font-weight: 400;
-    font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .productdescription {
-    font-weight: 400;
-    font-size: 1rem;
-    margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .buynowbutton {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 2rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2rem;
 
-    background-color: white;
-    border: 3px solid black;
-    width: 10rem;
-    height: 3rem;
-    margin-top: 2rem;
+  background-color: white;
+  border: 3px solid black;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 2rem;
 }
 
 .storepic {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .solddiv {
-    position: relative;
+  position: relative;
 }
 
 .soldpic {
-    width: 100%;
-    height: auto;
-    opacity: 40%;
+  width: 100%;
+  height: auto;
+  opacity: 40%;
 }
 
 .soldbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 20%;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 20%;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .soldtext {
-    font-size: 1.3rem;
-    font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .storetitle {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .storeprice {
-    font-size: 1.5rem;
-    margin-top: 0;
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .discountprice {
-    font-size: 1.5rem;
-    margin-top: 0;
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
 del {
-    color: red;
+  color: red;
 }
 
 footer {
-    background-color: #cecad6;
-    height: 8rem;
-    color: black;
-    font-size: 1rem;
-    font-weight: 400;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    
+  background-color: #cecad6;
+  height: 8rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 li {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .seasonlink {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-
 
 .seasonlink:hover {
-    color: rgb(185, 185, 185);
+  color: rgb(185, 185, 185);
 }
 
-
 .linkproducttosite:link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .linkproducttosite:visited {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .linkproducttosite:hover {
-    color: rgb(143, 143, 143);
+  color: rgb(143, 143, 143);
 }
-
 
 .linkproducttosite:active {
-    color: rgb(90, 90, 90)
+  color: rgb(90, 90, 90);
 }
 
+@media only screen and (max-width: 600px) {
+  del {
+    display: inline-block;
+  }
 
-@media only screen and (max-width: 600px) { 
-    del {
-        display: inline-block;
-    }
+  .menu {
+    font-size: 1rem;
+  }
 
-    .menu {
-        font-size: 1rem;
-    }
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
 
-    .logo {
-        width: 4rem;
-        height: 4rem;
-    }
+  .productpic {
+    width: 100%;
+  }
 
+  .productwrap {
+  }
 
-    .productpic {
-        width: 100%;
-    }
+  .storediv {
+    margin-bottom: 2rem;
+  }
 
-    .productwrap {
+  main {
+    padding: 0.5rem 4rem;
+  }
 
-    }
-
-    .storediv {
-        margin-bottom: 2rem;
-    }
-
-    main {
-        padding: 0.5rem 4rem;
-    } 
-
-    .soldtext {
-        font-size: 1rem;
-    }
+  .soldtext {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-
-    .productwrap {
-        display: flex;
-        justify-content: space-between;
-    }
-
-
+  .productwrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-
-
