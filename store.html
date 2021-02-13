@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="storegrid.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="storegrid.css" />
+  </head>
+  <body>
     <header>
-        <img class="logo" src="logo.png">
-        
-        <a class="menu" href="index.html">Home</a>
-        <a class="menu" href="store.html">Store</a>
-        <a class="menu" href="categories.html">Categories</a>
+      <img class="logo" src="logo.png" />
+
+      <a class="menu" href="index.html">Home</a>
+      <a class="menu" href="store.html">Store</a>
+      <a class="menu" href="categories.html">Categories</a>
     </header>
 
     <main>
-        <div class="grid">
-        <div class="storediv">
-            <a class="linkproducttosite" href="product.html">
-        <img class="storepic" src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp">
-        <h1 class="storetitle">Sahara Team India Fanwear Round Neck Jersey</h1>
-        <h2 class="storeprice">895 SEK</h2>
-    </a>
-    </div>
+      <div class="grid" id="product123">
+        <template>
+          <div class="storediv">
+            <div class="solddiv">
+              <a class="linkproducttosite" href="product.html">
+                <img
+                  class="storepic"
+                  src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+                />
+                <div class="soldoutbox"></div>
+                <h1 class="storetitle">
+                  Sahara Team India Fanwear Round Neck Jersey
+                </h1>
+                <h2 class="storeprice">895 SEK</h2>
+              </a>
+            </div>
+          </div>
+        </template>
 
-    <div class="storediv">
+        <!-- <div class="storediv">
         <div class="solddiv">
             <a class="linkproducttosite" href="product.html">
         <img class="soldpic" src="https://kea-alt-del.dk/t7/images/webp/1000/1164.webp">
@@ -34,7 +44,7 @@
         <h1 class="storetitle">Blue T20 Indian Cricket Jersey</h1>
         <h2 class="discountprice">1567 SEK <del>1595 SEK </del></h2>
     </a>
-    </div>
+</div>
 
     <div class="storediv">
         <a class="linkproducttosite" href="product.html">
@@ -49,15 +59,18 @@
         <img class="storepic" src="https://kea-alt-del.dk/t7/images/webp/1000/1526.webp">
         <h1 class="storetitle">Big Cat Backpack Black</h1>
         <h2 class="storeprice">1299 SEK</h2>
-    </a>
-    </div>
-
-
+    </a> -->
+      </div>
     </main>
 
     <footer>
-        <p>Made by Daria Stoica at KEA, 2021.</p>
-        <p>Data fetched from: https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</p>
+      <p>Made by Daria Stoica at KEA, 2021.</p>
+      <p>
+        Data fetched from:
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset
+      </p>
     </footer>
-</body>
+
+    <script src="store.js"></script>
+  </body>
 </html>
