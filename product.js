@@ -13,4 +13,6 @@ function showProduct(product) {
   document.querySelector(
     "img.productpic"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+  document.querySelector("h1.productdisplayname").textContent =
+    product.productdisplayname;
 }
