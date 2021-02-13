@@ -93,9 +93,27 @@ main {
   align-items: center;
 }
 
+.soldbox2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 15%;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .soldtext {
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+.productwrap {
+  position: relative;
 }
 
 .storetitle {

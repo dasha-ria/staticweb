@@ -72,11 +72,13 @@ function showProduct(product) {
   if (product.discount) {
     const oldprice = document.createElement("del");
     oldprice.textContent = product.price;
-    copy.querySelector(".storeprice").textContent = `${
+    copy.querySelector(".storeprice").textContent = `SEK ${
       product.price - product.discount
     } `;
 
     copy.querySelector(".storeprice").appendChild(oldprice);
+  } else {
+    copy.querySelector(".storeprice").textContent = `SEK ${product.price} `;
   }
 
   if (product.soldout) {
