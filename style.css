@@ -37,7 +37,7 @@ main {
 }
 
 .productpic {
-  width: 50%;
+  width: 45%;
   height: auto;
 }
 
@@ -199,6 +199,7 @@ li {
 
   .productpic {
     width: 100%;
+    height: auto;
   }
 
   .storediv {
