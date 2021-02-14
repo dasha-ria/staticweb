@@ -1,70 +1,17 @@
-const data = [
-  {
-    id: 1163,
-    gender: "Men",
-    category: "Apparel",
-    subcategory: "Topwear",
-    articletype: "Tshirts",
-    season: "Summer",
-    productionyear: 2011,
-    usagetype: "Sports",
-    productdisplayname: "Sahara Team India Fanwear Round Neck Jersey",
-    price: 895,
-    discount: null,
-    brandname: "Nike",
-    soldout: 0,
-  },
-  {
-    id: 1164,
-    gender: "Men",
-    category: "Apparel",
-    subcategory: "Topwear",
-    articletype: "Tshirts",
-    season: "Winter",
-    productionyear: 2015,
-    usagetype: "Sports",
-    productdisplayname: "Blue T20 Indian Cricket Jersey",
-    price: 1595,
-    discount: 28,
-    brandname: "Nike",
-    soldout: 1,
-  },
+const urlParams = new URLSearchParams(window.location.search);
+const season = urlParams.get("season");
 
-  {
-    id: 1165,
-    gender: "Men",
-    category: "Apparel",
-    subcategory: "Topwear",
-    articletype: "Tshirts",
-    season: "Summer",
-    productionyear: 2013,
-    usagetype: "Sports",
-    productdisplayname: "Mean Team India Cricket Jersey",
-    price: 2495,
-    discount: 45,
-    brandname: "Nike",
-    soldout: 0,
-  },
+let url = "https://kea-alt-del.dk/t7/api/products/";
+if (season) {
+  url += "?season=" + season;
+}
 
-  {
-    id: 1525,
-    gender: "Unisex",
-    category: "Accessories",
-    subcategory: "Bags",
-    articletype: "Backpacks",
-    season: "Fall",
-    productionyear: 2010,
-    usagetype: "Casual",
-    productdisplayname: "Deck Navy Blue Backpack",
-    price: 1299,
-    discount: 55,
-    brandname: "Puma",
-    soldout: 0,
-  },
-];
-data.forEach(showProduct);
+fetch(url)
+  .then((res) => res.json())
+  .then((data) => data.forEach(showProduct));
 
 function showProduct(product) {
+  console.log(product);
   const template = document.querySelector("template").content;
   const copy = template.cloneNode(true);
   copy.querySelector("h1").textContent = product.productdisplayname;
